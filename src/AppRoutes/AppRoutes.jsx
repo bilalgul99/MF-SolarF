@@ -52,6 +52,7 @@ function AppRoutes() {
 
             {/* Admin Routes */}
             <Route element={<AdminRoute/>}>
+               <Route path='/dashboard' element={<Navigate to={"admin/orders"}/>}} /> 
             <Route path='admin/orders' element={<Order_Admin/>} />
             <Route path='admin/products' element={<Products_Admin/>} />
             </Route>
